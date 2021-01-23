@@ -176,15 +176,15 @@
             // Extrect and print sessioned user data
             $sql = "SELECT * FROM todos WHERE user_id = '".$_SESSION['id']."'";
             $result = $conn->query($sql);
+            echo "<table border=1>";
+            echo "<thead>";
+            echo "<tr>";
+                echo "<th>Tasks</th>";
+                echo "<th>Operations</th>";
+            echo "</tr>";
+            echo "</thead>";
             if(mysqli_num_rows($result) > 0)
             {
-                echo "<table border=1>";
-                echo "<thead>";
-                echo "<tr>";
-                    echo "<th>Tasks</th>";
-                    echo "<th>Operations</th>";
-                echo "</tr>";
-                echo "</thead>";
                 while($res = $result->fetch_assoc())
                 {
                     echo "<tr>";
@@ -204,11 +204,14 @@
                     }
                     echo "</tr>";
                 }
-                echo "</table>";
+                
             }
             else{
-                echo "<div class='container-fluid'> No Tasks yet!! </div>";
+                echo "<tr >";
+                echo "<td colspan=2 class='sub-text'> No Tasks yet!! </td>";
+                echo "</tr>";
             }
+            echo "</table>";
         ?>
     </div>
     
