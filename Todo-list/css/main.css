@@ -59,6 +59,12 @@ input{
     font-size: 400%;
     margin-left: 5%;
 }
+.sub-text{
+    color: white;
+    font-weight: thin;
+    font-size: 100%;
+    text-align: center;
+}
 li{
     list-style: none;
 }
