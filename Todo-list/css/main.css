@@ -1,0 +1,247 @@
+.customMainDIV{
+    margin-top: 5%;
+    background-color: #000000bd;
+    border-radius: 10px;
+    padding: 3%;
+    color: lightgrey;
+    margin-bottom: 100px;
+}
+.form-heading{
+    text-align:center;
+    color:white;
+    margin-bottom:10%;
+}
+.signupBTN{
+    width: 100%;
+    background-color: rgb(255, 136, 0);
+    color: white;
+}
+input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px;
+    margin-bottom: 3%;
+    padding: 3%;
+}
+.customTaskDIV{
+    margin-top: 5%;
+}
+.TaskSubmitDIV{
+    margin-bottom: 5%;
+}
+.title-div{
+    text-align: center;
+    padding: 3%;
+    color: white;
+}
+/* Navbar design */
+.mynavbar .icon {
+    display: none;
+  }
+.mynavbar{
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(27, 72, 90);
+    display: flex;
+    box-shadow: 0px 1px 8px #000000;
+    overflow: hidden;
+}
+.mynav-logo{
+    width: 10%;
+}
+#navbar-logo{
+    width: 100%;
+}
+.main-text{
+    color: white;
+    font-weight: bolder;
+    padding-right: 5%;
+    font-size: 400%;
+    margin-left: 5%;
+}
+li{
+    list-style: none;
+}
+.mynav-elements{
+    display: flex;
+}
+a{
+    text-align: center;
+    text-decoration: none !important;
+    color: black;
+    padding:1%;
+    background-color: white;
+    margin-right: 5%;
+    border-radius: 5px;
+    width: 100px;
+    height: 5vh;
+    margin-top: 10%;
+}
+a:hover{
+    color: white;
+    background-color: rgb(255, 136, 0);
+}
+.custom-container{
+    display: flex;
+    padding: 1%;
+}
+.mynavbar a.active {
+    background-color: rgb(255, 136, 0);
+    color: white;
+}
+.userName{
+    color: white;
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+/* Queries for responsive navbar */
+@media screen and (max-width: 600px) 
+{
+    .mynavbar a{display: none;}
+    .mynavbar a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .mynavbar.responsive { position: relative; }
+    .mynavbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .mynavbar.responsive a:not(:nth-child(4)){
+      float: none;
+      display: block;
+      float: left;
+      padding: 0;
+      margin-top: 10px;
+    }
+    .mynavbar.responsive a.icon{
+     display: none;     
+    }
+    .userName{
+        display: none;
+    }
+    .mynav-elements{
+        padding: 0;
+        display: inline;
+    }
+}
+/* END */
+a input{
+    background-color: white;
+}
+a input:hover{
+    color: white;
+    background-color: rgb(255, 136, 0);
+}
+#custom-footer{
+    background-color: rgb(27, 72, 90);
+    margin:0px;
+    padding:2%;
+    bottom:0;
+    width: 100%;
+    color:lightgray;
+}
+/* Table */
+table * {
+    position: relative;
+  }
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    border-color: white;
+    margin:0 auto;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+th,td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    position: -webkit-sticky;
+  position: sticky;
+}
+th {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.411);
+}
+@media screen and (max-width: 35.5em) {
+    table {
+      display: block;
+    }
+    table > *,
+  table tr,
+  table td,
+  table th {
+      display: block;
+    }
+    table thead {
+      display: none;
+    }
+    table tbody tr {
+      height: auto;
+      padding: 8px 0;
+    }
+    table tbody tr td {
+      padding-left: 45%;
+      margin-bottom: 12px;
+    }
+    table tbody tr td:last-child {
+      margin-bottom: 0;
+    }
+    table tbody tr td:before {
+      position: absolute;
+      font-weight: 700;
+      width: 40%;
+      left: 10px;
+      top: 0;
+    }
+    table tbody tr td:nth-child(1):before {
+      content: "Tasks";
+    }
+    table tbody tr td:nth-child(2):before {
+      content: "Operations";
+    }
+}
+.completed{
+    text-decoration: line-through;
+    color: silver;
+}
+.edit,.delete,.done{
+    padding: 1%;
+}
+.edit:hover{
+    color: black;
+    background-color: rgb(134, 134, 134);
+}
+.edit{
+    color: black;
+    background-color: rgb(134, 134, 134);
+}
+.delete:hover{
+    color: white;
+    background-color: red;
+}
+.delete{
+    color: white;
+    background-color: red;
+}
+.done:hover{
+    color: white;
+    background-color: green;
+}
+.done{
+    color: white;
+    background-color: green;
+}
+.btncompleted .delete{
+    margin-left: 11%;
+}
